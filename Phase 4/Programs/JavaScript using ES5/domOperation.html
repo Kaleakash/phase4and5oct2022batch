@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/JavaScript">
+        function readAndWrite() {
+            // read the text field value using name attribute 
+            // var fname = document.getElementsByName("uname")[0].value;
+            // var lname = document.getElementsByName("uname")[1].value;
+            // var fullname = fname +" "+lname;
+            // alert("Welcome user "+fullname);
+
+            // read the text field value using id attribute 
+            var msg = document.getElementsByTagName("h1")[0].innerHTML;
+            var fname = document.getElementById("n1").value;
+            var lname = document.getElementById("n2").value;
+            var fullname = fname +" "+lname;
+            //alert("Welcome user "+fullname);
+            document.getElementById("n3").value = fullname;
+            document.getElementById("out").innerHTML = fullname;
+            document.getElementsByTagName("span")[0].innerHTML=fullname;
+            document.getElementById("n1").value="";
+            document.getElementById("n2").value="";
+            alert(msg);
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to HTML DOM Operation</h1>
+    FName :<input type="text" name="uname" id="n1"/><br/>
+    LName :<input type="text" name="uname" id="n2"/><br/>
+    FullName :<input type="text" name="fullname" id="n3" readonly/><br/>
+    <div id="out">
+
+    </div>
+    <span></span>
+    <br/>
+    <input type="button" value="click here" onclick="readAndWrite()"/>
+</body>
+</html>
