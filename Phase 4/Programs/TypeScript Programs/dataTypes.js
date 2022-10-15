@@ -1,0 +1,18 @@
+var n = 100;
+var fname = "Raj Deep";
+var result1 = true;
+//n ="Ramesh";
+var msg = "Welcome";
+msg = 10;
+msg = false;
+var m = 200;
+var lname = "Ajay Kumar";
+var result2 = false;
+var o;
+var desg;
+var result3;
+o = 400;
+desg = "Tester";
+result3 = true;
+console.log(n);
+console.log(fname);
