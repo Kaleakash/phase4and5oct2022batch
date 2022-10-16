@@ -1,0 +1,15 @@
+<div>
+    <h3>Event binding</h3>
+    <input type="button" value="click here" (click)="fun()"/>
+    <br/>
+    {{msg}}
+    <br/>
+    Name :<input type="text" #nameRef/>
+    <br/>
+    <input type="button" value="pass value" (click)="passValue(nameRef)"/>
+    <br/>
+    1st Number :<input type="text" #n1/><br/>
+    2nd Number :<input type="text" #n2/><br/>
+    <input type="button" value="add" (click)="add(n1,n2)"/><br/>
+    {{result}}
+</div>
