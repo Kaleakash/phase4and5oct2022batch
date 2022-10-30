@@ -1,0 +1,6 @@
+{
+    "questions":[
+        {"qid":1,"question":"what is ng","a":"next generation","b":"next gen","c":"neither next","d":"nothing generation"},
+        {"qid":2,"question":"what is di","a":"dependency injection","b":"dependent generation","c":"do generation","d":"doing generation"}
+    ]
+}
