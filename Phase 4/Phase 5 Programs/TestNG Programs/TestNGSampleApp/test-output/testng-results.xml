@@ -1,29 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-05T20:51:36 IST" name="Default suite" finished-at="2022-11-05T20:51:36 IST" duration-ms="41">
+  <suite started-at="2022-11-05T22:53:17 IST" name="Default suite" finished-at="2022-11-05T22:53:17 IST" duration-ms="31">
     <groups>
     </groups>
-    <test started-at="2022-11-05T20:51:36 IST" name="Default test" finished-at="2022-11-05T20:51:36 IST" duration-ms="41">
-      <class name="com.service.OperationTest">
-        <test-method signature="addTest()[pri:0, instance:com.service.OperationTest@73ee04c8]" started-at="2022-11-05T20:51:36 IST" name="addTest" finished-at="2022-11-05T20:51:36 IST" duration-ms="8" status="PASS">
+    <test started-at="2022-11-05T22:53:17 IST" name="Default test" finished-at="2022-11-05T22:53:17 IST" duration-ms="31">
+      <class name="com.service.EmployeeServiceTest">
+        <test-method signature="removeEmployeeTest()[pri:0, instance:com.service.EmployeeServiceTest@49dc7102]" started-at="2022-11-05T22:53:17 IST" name="removeEmployeeTest" finished-at="2022-11-05T22:53:17 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addTest -->
-        <test-method signature="divTest()[pri:0, instance:com.service.OperationTest@73ee04c8]" started-at="2022-11-05T20:51:36 IST" name="divTest" finished-at="2022-11-05T20:51:36 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- divTest -->
-        <test-method signature="mulTest()[pri:0, instance:com.service.OperationTest@73ee04c8]" started-at="2022-11-05T20:51:36 IST" name="mulTest" finished-at="2022-11-05T20:51:36 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mulTest -->
-        <test-method signature="subTest()[pri:0, instance:com.service.OperationTest@73ee04c8]" started-at="2022-11-05T20:51:36 IST" name="subTest" finished-at="2022-11-05T20:51:36 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- subTest -->
-      </class> <!-- com.service.OperationTest -->
+        </test-method> <!-- removeEmployeeTest -->
+      </class> <!-- com.service.EmployeeServiceTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

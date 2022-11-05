@@ -8,6 +8,7 @@ import com.bean.Employee;
 
 public class EmployeeService {
 	List<Employee> listOfEmp;
+	
 	public EmployeeService() {
 		listOfEmp= new ArrayList<Employee>();
 		listOfEmp.add(new Employee(1, "Ajay", 14000, "Tester"));
@@ -17,6 +18,7 @@ public class EmployeeService {
 	public Employee getEmployee() {
 		// coding....
 		Employee emp = new Employee(100, "Ravi", 12000, "Tester");
+		
 		return emp;
 	}
 	public List<Employee> getAllEmployee() {
@@ -32,10 +34,14 @@ public class EmployeeService {
 		}
 	}
 	public Employee searchEmployee(int id) {
-		return listOfEmp.stream().filter(emp->emp.getId()==id).findFirst().get();
+		Optional<Employee> op = listOfEmp.stream().filter(emp->emp.getId()==id).findFirst();
+		if(op.isPresent()) {
+			return op.get();
+		}else {
+			return null;
+		}
 		// if record presnet it return employee object else it return null.
 	}
-	
 	public String removeEmployee(int id) {
 		Employee employee  = listOfEmp.stream().filter(emp->emp.getId()==id).findFirst().get();
 		if(employee==null) {
