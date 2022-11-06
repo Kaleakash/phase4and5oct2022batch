@@ -13,12 +13,12 @@ import org.testng.annotations.AfterSuite;
 
 public class TestHookMethods {
   @Test
-  @Ignore
+
   public void test1() {
 	  System.out.println("while testing first function");
   }
   @Test
-  @Ignore
+
   public void test2() {
 	  System.out.println("while testing second function");
   }

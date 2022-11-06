@@ -15,7 +15,7 @@ import com.bean.Employee;
 public class EmployeeServiceTest {
 
   @Test
-  @Ignore
+
   public void getAllEmployeeTest() {
 	  EmployeeService es = new EmployeeService();
 	  List<Employee> listOfEmp = es.getAllEmployee();
@@ -28,7 +28,7 @@ public class EmployeeServiceTest {
   }
 
   @Test
-  @Ignore
+
   public void getEmployeeTest() {
     EmployeeService es = new EmployeeService();
     	Employee emp = es.getEmployee();
@@ -52,7 +52,7 @@ public class EmployeeServiceTest {
   }
 
   @Test
-  @Ignore
+
   public void searchEmployeeTest() {
 	  EmployeeService es = new EmployeeService();
 	  Employee emp1	 = es.searchEmployee(100);
@@ -62,11 +62,11 @@ public class EmployeeServiceTest {
   }
 
   @Test
-  @Ignore
+
   public void updateSalaryTest() {
 	  EmployeeService es = new EmployeeService();
 	  Employee emp = new Employee(1, "Ravi", 45000, "Programmer");
 	  float updatedSalary = es.updateSalary(emp);
-	  assertEquals(updatedSalary, emp.getSalary()+3000);
+	  assertEquals(updatedSalary, emp.getSalary()+3600);
   }
 }
