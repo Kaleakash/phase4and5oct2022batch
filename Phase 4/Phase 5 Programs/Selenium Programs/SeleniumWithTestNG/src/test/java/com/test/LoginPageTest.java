@@ -17,7 +17,12 @@ public class LoginPageTest {
  
   @Test
   public void loginPageTest() {
-	  driver.get("http://127.0.0.1:5500/login.html");
+	  //driver.get("http://127.0.0.1:5500/login.html");
+	  
+	  //driver.get("http://localhost:8080/login.jsp");
+	  
+	  driver.get("http://localhost:4200/login");
+	  
 	  String title = driver.getTitle();
 	  assertEquals(title, "Document");
 	  WebElement emailRef = driver.findElement(By.id("n1"));
@@ -64,7 +69,7 @@ public class LoginPageTest {
 
   @AfterClass
   public void afterClass() {
-	  
+	  driver.close();
   }
 
 }
