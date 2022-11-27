@@ -45,29 +45,36 @@ sudo yum install -y apache-maven
 
 Now, to download the latest Jenkins package
 
-sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat/jenkins.repo
+-->sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat/jenkins.repo
 
 **iv. **To enable the installation of the package, import the key file from Jenkins-CI:
 
-sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+-->sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 
 Install Jenkins on the EC2 instance
 
-sudo yum install jenkins
+-->sudo yum install jenkins
 
 To start the Jenkins service
 
-sudo service jenkins start
+-->sudo service jenkins start
 
 To check the status 
 
-sudo systemctl status jenkins
+-->sudo systemctl status jenkins
 
 This one is use to get the default password 
 
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 
+
+-------------------------------->
+sudo usermod -a -G docker ec2-user
+sudo usermod -a -G docker jenkins		giving the permission 
+sudo reboot 		: es2 instance 
+
+------------------------------->
 -----------------------> Node JS 
 
 node --version 
